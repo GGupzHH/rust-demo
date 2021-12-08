@@ -7,6 +7,12 @@ fn main() {
     // demo 1 print and pr
     demo::print_function();
 
+    // demo 2 debug 什么。。。看不懂
+    demo::fn_debug();
+
+    // demo 3 基础语法
+    demo::variable_fn();
+
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");
     let width = message.chars().count();
