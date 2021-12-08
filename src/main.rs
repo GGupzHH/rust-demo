@@ -1,8 +1,12 @@
 use ferris_says::say;
 use std::io::{stdout, BufWriter};
+mod demo;
 
 fn main() {
-    println!("Hello, world!");
+    
+    // demo 1 print and pr
+    demo::print_function();
+
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");
     let width = message.chars().count();
