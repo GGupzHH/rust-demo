@@ -7,6 +7,9 @@ fn main() {
     // demo 1 print and pr
     demo::print_function();
 
+    // demo 1 debug
+    demo::fn_debug();
+
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");
     let width = message.chars().count();

@@ -2,7 +2,8 @@
 pub fn print_function() {
   println!("Hello, world!");
   print!("print 不带换行的控制台输出");
-  print!("print 不带换行的控制台输出 但是可以使用换行符换行");
+  print!("print 不带换行的控制台输出 但是可以使用换行符换行\\n \n");
+  println!("换行符 \\n 转义 前面加反斜杠");
   println!("println 带换行的控制台输出");
 
    // In general, the `{}` will be automatically replaced with any
