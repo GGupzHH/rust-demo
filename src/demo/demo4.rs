@@ -24,3 +24,10 @@ impl Display for City {
             self.name, self.lat.abs(), lat_c, self.lon.abs(), lon_c)
     }
 }
+
+impl Display for Color {
+    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
+        write!(f, "Red-->{}, Green-->{}, Blue-->{},",
+            self.red, self.green, self.blue)
+    }
+}

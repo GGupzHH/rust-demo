@@ -1,5 +1,6 @@
 use ferris_says::say;
 use std::io::{stdout, BufWriter};
+
 mod demo;
 use crate::demo::City;
 use crate::demo::Color;
@@ -32,7 +33,8 @@ fn main() {
     ].iter() {
         // Switch this to use {} once you've added an implementation
         // for fmt::Display.
-        println!("{:?}", *color);
+        // println!("{:?}", *color);
+        println!("{}", *color);
     }
 
 
