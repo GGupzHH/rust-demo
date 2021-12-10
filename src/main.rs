@@ -4,6 +4,7 @@ use std::io::{stdout, BufWriter};
 mod demo;
 use crate::demo::City;
 use crate::demo::Color;
+// use crate::demo::Point2D;
 
 fn main() {
     
@@ -37,7 +38,7 @@ fn main() {
         println!("{}", *color);
     }
 
-
+    demo::point2D_fn();
 
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");

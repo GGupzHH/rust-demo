@@ -15,6 +15,11 @@ pub struct Color {
     pub blue: u8
 }
 
+struct Point2D {
+    pub x: u8,
+    y: u8
+}
+
 impl Display for City {
     fn fmt(&self, f: &mut Formatter) -> fmt::Result {
         let lat_c = if self.lat >= 0.0 { 'N' } else { 'S' };
@@ -30,4 +35,16 @@ impl Display for Color {
         write!(f, "Red-->{}, Green-->{}, Blue-->{},",
             self.red, self.green, self.blue)
     }
+}
+
+impl fmt::Display for Point2D {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "x -> {}, y -> {}", self.x, self.y)
+    }
+}
+
+pub fn point2D_fn () {
+    let point = Point2D { x: 1, y: 2 };
+    
+    println!("{}", point);
 }
