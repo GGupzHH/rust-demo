@@ -20,6 +20,11 @@ fn main() {
     // demo4 formatting
     // demo::formatting_fn();
 
+    // 遍历demo 4中的数据结构
+    // 每一个数据结构的属性都可以规定私有或者公共
+    // 数据结构是直接存储到内存的  所以想看的话就需要实现数据结构的  impl fmt::Display 方法
+    // fmt::Display 方法内部可以使用 fn fmt去将数据拼接成自己想要的格式输出
+    
     for city in [
         City { name: "Dublin", lat: 53.347778, lon: -6.259722 },
         City { name: "Oslo", lat: 59.95, lon: 10.75 },
