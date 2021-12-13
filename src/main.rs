@@ -44,11 +44,14 @@ fn main() {
     //     println!("{}", *color);
     // }
 
-    // demo::point2D_fn();
+    // demo::point2_d_fn();
 
     // demo5 Vec
     let v = List(vec![1, 2, 3]);
     println!("{}", v);
+
+    // demo 6 type
+		demo::print_type();
 
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");

@@ -43,7 +43,7 @@ impl fmt::Display for Point2D {
     }
 }
 
-pub fn point2D_fn () {
+pub fn point2_d_fn () {
     let point = Point2D { x: 1, y: 2 };
     
     println!("{}", point);
