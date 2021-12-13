@@ -2,8 +2,9 @@ use ferris_says::say;
 use std::io::{stdout, BufWriter};
 
 mod demo;
-use crate::demo::City;
-use crate::demo::Color;
+// use crate::demo::City;
+// use crate::demo::Color;
+use crate::demo::List;
 // use crate::demo::Point2D;
 
 fn main() {
@@ -24,26 +25,30 @@ fn main() {
     // 每一个数据结构的属性都可以规定私有或者公共
     // 数据结构是直接存储到内存的  所以想看的话就需要实现数据结构的  impl fmt::Display 方法
     // fmt::Display 方法内部可以使用 fn fmt去将数据拼接成自己想要的格式输出
-    
-    for city in [
-        City { name: "Dublin", lat: 53.347778, lon: -6.259722 },
-        City { name: "Oslo", lat: 59.95, lon: 10.75 },
-        City { name: "Vancouver", lat: 49.25, lon: -123.1 },
-    ].iter() {
-        println!("{}", *city);
-    }
-    for color in [
-        Color { red: 128, green: 255, blue: 90 },
-        Color { red: 0, green: 3, blue: 254 },
-        Color { red: 0, green: 0, blue: 0 },
-    ].iter() {
-        // Switch this to use {} once you've added an implementation
-        // for fmt::Display.
-        // println!("{:?}", *color);
-        println!("{}", *color);
-    }
 
-    demo::point2D_fn();
+    // for city in [
+    //     City { name: "Dublin", lat: 53.347778, lon: -6.259722 },
+    //     City { name: "Oslo", lat: 59.95, lon: 10.75 },
+    //     City { name: "Vancouver", lat: 49.25, lon: -123.1 },
+    // ].iter() {
+    //     println!("{}", *city);
+    // }
+    // for color in [
+    //     Color { red: 128, green: 255, blue: 90 },
+    //     Color { red: 0, green: 3, blue: 254 },
+    //     Color { red: 0, green: 0, blue: 0 },
+    // ].iter() {
+    //     // Switch this to use {} once you've added an implementation
+    //     // for fmt::Display.
+    //     // println!("{:?}", *color);
+    //     println!("{}", *color);
+    // }
+
+    // demo::point2D_fn();
+
+    // demo5 Vec
+    let v = List(vec![1, 2, 3]);
+    println!("{}", v);
 
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");
