@@ -13,7 +13,11 @@ fn main() {
     // demo::print_function();
 
     // demo 2 debug 什么。。。看不懂
-    // demo::fn_debug();
+		let pair = (1, true);
+    println!("pair is {:?}", pair);
+
+    println!("the reversed pair is {:?}", demo::reverse(pair));
+    demo::fn_debug();
 
     // demo 3 基础语法
     // demo::variable_fn();
@@ -51,7 +55,7 @@ fn main() {
     println!("{}", v);
 
     // demo 6 type
-		demo::print_type();
+		// demo::print_type();
 
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");
