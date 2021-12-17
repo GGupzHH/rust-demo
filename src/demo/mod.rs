@@ -4,6 +4,7 @@ pub mod demo3;
 pub mod demo4;
 pub mod demo5;
 pub mod demo6;
+pub mod demo7;
 
 pub use demo1::*;
 pub use demo2::*;
@@ -11,3 +12,4 @@ pub use demo3::*;
 pub use demo4::*;
 pub use demo5::*;
 pub use demo6::*;
+pub use demo7::*;
