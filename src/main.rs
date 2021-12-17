@@ -5,6 +5,7 @@ mod demo;
 // use crate::demo::City;
 // use crate::demo::Color;
 use crate::demo::List;
+use crate::demo::WebEvent;
 // use crate::demo::Point2D;
 
 fn main() {
@@ -13,11 +14,11 @@ fn main() {
     // demo::print_function();
 
     // demo 2 debug 什么。。。看不懂
-		let pair = (1, true);
-    println!("pair is {:?}", pair);
+		// let pair = (1, true);
+    // println!("pair is {:?}", pair);
 
-    println!("the reversed pair is {:?}", demo::reverse(pair));
-    demo::fn_debug();
+    // println!("the reversed pair is {:?}", demo::reverse(pair));
+    // demo::fn_debug();
 
     // demo 3 基础语法
     // demo::variable_fn();
@@ -56,6 +57,11 @@ fn main() {
 
     // demo 6 type
 		// demo::print_type();
+
+		// demo 枚举
+		demo::inspect(WebEvent::PageLoad);
+
+
 
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");
