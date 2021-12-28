@@ -59,7 +59,12 @@ fn main() {
 		// demo::print_type();
 
 		// demo 枚举
-		demo::inspect(WebEvent::PageLoad);
+    let load = WebEvent::PageLoad;
+		demo::inspects(load);
+
+    let un_load = WebEvent::PageUnload;
+
+    demo::inspects(un_load);
 
 
 
