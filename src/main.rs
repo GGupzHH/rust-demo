@@ -8,8 +8,11 @@ use crate::demo::List;
 use crate::demo::WebEvent;
 // use crate::demo::Point2D;
 
+use crate::demo::Work;
+
 fn main() {
-    
+  
+  use crate::demo::Status::{ Poor, Rich };
     // demo 1 print and pr
     // demo::print_function();
 
@@ -58,15 +61,27 @@ fn main() {
     // demo 6 type
 		// demo::print_type();
 
-		// demo 枚举
-    let load = WebEvent::PageLoad;
-		demo::inspects(load);
+		// demo 枚举 demo 7 ---------------
+    // let load = WebEvent::PageLoad;
+		// demo::inspects(load);
 
-    let un_load = WebEvent::PageUnload;
+    // let un_load = WebEvent::PageUnload;
 
-    demo::inspects(un_load);
+    // demo::inspects(un_load);
 
-
+    // demo 8----------------------------------
+    let status = Rich;
+    match status {
+      Poor => println!("the rich have lost of money!"),
+      Rich => println!("the rich have lost of money222!"),
+    };
+    
+    let status_demo = Poor;
+    match status_demo {
+      Poor => println!("the rich have lost of money!"),
+      Rich => println!("the rich have lost of money222!"),
+    };
+    
 
     let stdout = stdout();
     let message = String::from("Hello Fellow Rustaceans");
