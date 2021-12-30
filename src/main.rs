@@ -10,6 +10,8 @@ use crate::demo::WebEvent;
 
 use crate::demo::Work;
 
+use crate::demo::LANGUAGE;
+
 fn main() {
   
   use crate::demo::Status::{ Poor, Rich };
@@ -81,6 +83,9 @@ fn main() {
       Poor => println!("the rich have lost of money!"),
       Rich => println!("the rich have lost of money222!"),
     };
+
+    // demo 9 ---------------------------------
+    println!("{}", LANGUAGE);
     
 
     let stdout = stdout();
